@@ -12,7 +12,7 @@ WORKDIR /app
 
 # Copy application files
 COPY ./Datasets /app/Datasets
-COPY ./docker.py /app/docker.py
+COPY docker_code.py /app/docker.py
 # Copy only Pipfile.lock to install dependencies
 COPY Pipfile Pipfile.lock /app/
 
@@ -20,4 +20,4 @@ COPY Pipfile Pipfile.lock /app/
 RUN pipenv install --system --deploy
 
 # Specify the default command to run the app
-CMD ["python", "docker.py"]
+CMD ["python", "docker_code.py"]
