@@ -45,7 +45,7 @@ dist = (dist - 5459.664289865578) / 7815.189957479083
 store = st.select_slider(
     "Store Number: specify store in chain.", [str(i + 1) for i in range(1115)]
 )
-with open("./DNN_Misc/Store_dict.json", "r") as fp:
+with open("./Misc_Files/Store_dict.json", "r") as fp:
     store_dict = json.load(fp)
 store_nr = store_dict[store]
 
@@ -63,7 +63,7 @@ if model_choice == "Deep Neural Network":
     sample = []
     for col_name, value in og_sample.items():
         if col_name != "CompetitionDistance":
-            with open(f"./DNN_Misc/{col_name}.json", "r") as fp:
+            with open(f"./Misc_Files/{col_name}.json", "r") as fp:
                 col_dict = json.load(fp)
             col_value = int(col_dict[value])
             ohe = [0] * len(col_dict)
@@ -142,7 +142,7 @@ else:
 
     for key, value in sample_dict.items():
         if key != "CompetitionDistance":
-            with open(f"./DNN_Misc/{key}.json", "r") as fp:
+            with open(f"./Misc_Files/{key}.json", "r") as fp:
                 col_dict = json.load(fp)
             col_value = int(col_dict[value])
             if (
