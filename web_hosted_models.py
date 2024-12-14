@@ -73,7 +73,7 @@ if model_choice == "Deep Neural Network":
             sample.extend([value])
 
     sample = torch.Tensor(sample)
-    model = torch.load(r"./Trained_Models/DNN.pth", weights_only=False)
+    model = torch.load(r"./Trained_Models/DNN.pth", map_location=torch.device('cpu'), weights_only=False)
     model.eval()
     prediction = model(sample)
     st.success(f"The store Sales should be around: {str(int(prediction.item()))}")
