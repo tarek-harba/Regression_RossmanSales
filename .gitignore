@@ -2,4 +2,3 @@ docker.py
 __pycache__
 .idea
 .ipynb_checkpoints
-Dockerfile
