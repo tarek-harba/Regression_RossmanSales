@@ -1,17 +1,19 @@
 # Prediction of Store Sales!
 ## Built Regression models on data from Rossman store chain 
-In this project we predict future sales of the supermarket chain "Rossman" using two different models. A regression 
+In this project we predict future sales of the supermarket chain [Rossman](https://www.kaggle.com/competitions/rossmann-store-sales)
+using two different models. A regression 
 forest which uses many regression trees, and a deep neural network.
 The project involves:
-* Preprocessing of data, handling missing values and data format.
-* Exploratory data analysis (EDA) using statistical methods. Goal is to identify (ir)relevant 
+* **Data preprocessing**, handling missing values and data format.
+* **Exploratory data analysis** (EDA) using statistical methods. Goal is to identify (ir)relevant 
 features.
-* Construct, train and save a deep neural network built based on processed data.
-* Construct, train and save a regression forest that leverages many regression trees that are trained sequentially to
+* Construct, train and save a **deep neural network** built based on processed data.
+* Construct, train and save a **regression forest** that leverages many regression trees that are trained sequentially to
 emphasize difficult and under-represented samples.
-* Create an interactive website, allowing user to input data and receive predictions from chosen model.
+* Create an **interactive website**, allowing user to input data and receive predictions from chosen model.
+* **Containerize** a portion of the code using [Docker](https://www.docker.com/get-started/).
+* Provide the user with an interactive version of the project using **jupyter notebooks**.
 
-and additionally, there are the dockerfile and .ipynb files which discussed below.
 
 # Performance
 Using the metric: Root mean square percentage error (RMSPE), the results are:
