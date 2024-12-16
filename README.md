@@ -34,7 +34,7 @@ used code along with resulting plots. Does not save trained models!
 
 # Download and use the code
 ## Clone Repo
-To get and run the files on your machine, the easiest way is to clone this repo!
+To get and run the files on your machine, the easiest way is to clone this repo and dive into **main.py** file!
 ## Dockerfile
 The dockerfile could be built into a docker image which could then be run in a container, this is 
 very useful since it only requires the user to have [Docker](https://www.docker.com/get-started/) installed.
